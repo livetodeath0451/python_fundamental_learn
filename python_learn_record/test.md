@@ -9,7 +9,10 @@ Task 01
 2.python初体验
 ----------------
 * 1）print and input
-
+  print('Hello, the first day of learning python!')
+  
+  name = input()
+  print(name)
 3.python 基础讲解
 ---------------
 * 1)python变量特征+命名规则
