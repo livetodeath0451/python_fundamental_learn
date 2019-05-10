@@ -12,7 +12,7 @@ Task 01
 
   print('Hello, the first day of learning python!')
   
-  name = input()
+  name = input()  
   print(name)
   
 3.python 基础讲解
