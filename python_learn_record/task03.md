@@ -16,7 +16,7 @@ Task 03
  
 ```
 
-* 3)字典的方法
+* 3)字典的方法  
 a.访问字典里的值
 ```
 dict = {'Name': 'Zara', 'Age': 7, 'Class': 'First'}
@@ -39,6 +39,13 @@ print "dict['School']: ", dict['School']
 
 >>> dict['Age']:  8
 >>> dict['School']:  RUNOOB
+```
+c.删除字典元素
+```python
+>>> d.pop('Bob')
+75
+>>> d
+{'Michael': 95, 'Tracy': 85}
 ```
 2.集合
 ----------------
