@@ -17,7 +17,29 @@ Task 03
 ```
 
 * 3)字典的方法
+a.访问字典里的值
+```
+dict = {'Name': 'Zara', 'Age': 7, 'Class': 'First'}
+print "dict['Name']: ", dict['Name']
+print "dict['Age']: ", dict['Age']
 
+>>> dict['Name']:  Zara
+>>> dict['Age']:  7
+```
+b.修改字典
+```
+dict = {'Name': 'Zara', 'Age': 7, 'Class': 'First'}
+ 
+dict['Age'] = 8 # 更新
+dict['School'] = "RUNOOB" # 添加
+ 
+ 
+print "dict['Age']: ", dict['Age']
+print "dict['School']: ", dict['School']
+
+>>> dict['Age']:  8
+>>> dict['School']:  RUNOOB
+```
 2.集合
 ----------------
 * 1）特性
