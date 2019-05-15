@@ -9,7 +9,11 @@ Task 03
 
 * 2)创建
 ```
-  d = {key1 : value1, key2 : value2 }
+  d = {key1 : value1, key2 : value2 }     
+  dict = {'Alice': '2341', 'Beth': '9102', 'Cecil': '3258'} 
+  dict1 = { 'abc': 456 }   
+  dict2 = { 'abc': 123, 98.6: 37 }  
+ 
 ```
 
 * 3)字典的方法
