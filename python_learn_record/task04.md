@@ -10,8 +10,8 @@ python中一共含有32个关键字：
  'in', 'is', 'lambda', 'nonlocal', 'not', 'or', 'pass', 'raise',  
  'return', 'try', 'while', 'with', 'yield'
 
-　　--关键字-是Python内置的、具有特殊意义的表示符 
-　　--使用时关键字后面不需要括号 
+　　--关键字-是Python内置的、具有特殊意义的表示符    
+　　--使用时关键字后面不需要括号    
 
 
 
@@ -28,13 +28,13 @@ python中一共含有32个关键字：
     return [表达式] 结束函数，选择性地返回一个值给调用方。不带表达式的return相当于返回 None。
 
 
-···
+```
 
-def functionname( parameters ): 
-   #"函数_文档字符串"
-   function_suite 
-   return [expression]    
-··· 
+def functionname( parameters ):    
+   #"函数_文档字符串"     
+   function_suite   
+   return [expression]      
+```
 
 
 3.函数参数与作用域
