@@ -84,12 +84,72 @@ def printme( str ):
 #调用printme函数
 printme( str = "My string");
 ```
+c. 默认参数
+
+调用函数时，默认参数的值如果没有传入，则被认为是默认值。下例会打印默认的age，如果age没有被传入：
 
 
+```
+#可写函数说明
+def printinfo( name, age = 35 ):
+   "打印任何传入的字符串"
+   print "Name: ", name;
+   print "Age ", age;
+   return;
+ 
+#调用printinfo函数
+printinfo( age=50, name="miki" );
+printinfo( name="miki" );
+
+
+```
+d. 不定长参数
+
+你可能需要一个函数能处理比当初声明时更多的参数。这些参数叫做不定长参数，和上述2种参数不同，声明时不会命名。基本语法如下：
+
+```
+# 可写函数说明
+def printinfo( arg1, *vartuple ):
+   "打印任何传入的参数"
+   print "输出: "
+   print arg1
+   for var in vartuple:
+      print var
+   return;
+ 
+# 调用printinfo 函数
+printinfo( 10 );
+printinfo( 70, 60, 50 );
+```
 
 
 4.函数返回值
---------------
+-----
+
+
+a. 指定返回值与隐含返回值
+
+ 
+
+    函数体中 return 语句有指定返回值时返回的就是其值
+
+    函数体中没有 return 语句时，函数运行结束会隐含返回一个 None 作为返回值，类型是 NoneType，与 return 、return None 等效，都是返回 None。
+---------
+
+b. 语句位置与多条 return 语句
+
+ 
+
+    python 函数使用 return 语句返回 "返回值"，可以将其赋给其它变量作其它的用处
+
+    所有函数都有返回值，如果没有 return 语句，会隐式地调用 return None 作为返回值
+
+    一个函数可以存在多条 return 语句，但只有一条可以被执行，如果没有一条 reutrn 语句被执行，同样会隐式调用 return None 作为返回值
+
+    如果有必要，可以显式调用 return None 明确返回一个None(空值对象)作为返回值，可以简写为 return，不过 python 中懒惰即美德，所以一般能不写就不写
+
+    如果函数执行了 return 语句，函数会立刻返回，结束调用，return 之后的其它语句都不会被执行了
+
 
 
 
