@@ -174,10 +174,61 @@ rb  wb ab  rb+   wb+  ab+ 二进制方式打开
 
 * 2）文件对象的操作方法
 
-  相关方法详情见[Datetime模块](https://www.cnblogs.com/panwenbin-logs/p/5521358.html/ "悬停显示")  
+  相关方法详情见[python的文件操作方法](https://www.cnblogs.com/panwenbin-logs/p/5521358.html/ "悬停显示")  
 
-* 3）学习对Excel及CSV文件进行操作6
+* 3）学习对Excel及CSV文件进行操作
 
+a. python读写csv文件
+```
+import csv
+
+#读取csv文件内容方法1
+csv_file = csv.reader(open('testdata.csv','r'))
+next(csv_file, None)    #skip the headers
+for user in csv_file:
+    print(user)
+
+#读取csv文件内容方法2
+with open('testdata.csv', 'r') as csv_file:
+    reader = csv.reader(csv_file)
+    next(csv_file, None)
+    for user in reader:
+        print(user)
+
+#从字典写入csv文件
+dic = {'fengju':25, 'wuxia':26}
+csv_file = open('testdata1.csv', 'w', newline='')
+writer = csv.writer(csv_file)
+for key in dic:
+    writer.writerow([key, dic[key]])
+csv_file.close()   #close CSV file
+
+csv_file1 = csv.reader(open('testdata1.csv','r'))
+for user in csv_file1:
+    print(user)
+```
+b. python读写excle文件
+
+```
+import xlrd, xlwt   #xlwt只能写入xls文件
+
+#读取xlsx文件内容
+rows = []   #create an empty list to store rows
+book = xlrd.open_workbook('testdata.xlsx')  #open the Excel spreadsheet as workbook
+sheet = book.sheet_by_index(0)    #get the first sheet
+for user in range(1, sheet.nrows):  #iterate 1 to maxrows
+    rows.append(list(sheet.row_values(user, 0, sheet.ncols)))  #iterate through the sheet and get data from rows in list
+print(rows)
+
+#写入xls文件
+rows1 = [['Name', 'Age'],['fengju', '26'],['wuxia', '25']]
+book1 = xlwt.Workbook()   #create new book1 excle
+sheet1 = book1.add_sheet('user')   #create new sheet
+for i in range(0, 3):    
+    for j in range(0, len(rows1[i])):
+        sheet1.write(i, j, rows1[i][j])
+book1.save('testdata1.xls')   #sava as testdata1.xls
+```
 
 
 
