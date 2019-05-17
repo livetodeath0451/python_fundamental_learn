@@ -162,9 +162,18 @@ b. 语句位置与多条 return 语句
 * 3）学习对Excel及CSV文件进行操作6
 
 
-5.Os模块
+6.Os模块
 --------------
+  
+  
+  相关方法详情见[Os模块](https://www.cnblogs.com/yufeihlf/p/6179547.html/ "悬停显示")  
 
 
-5.Datetime模块
+
+7.Datetime模块
 --------------
+  
+  
+  
+  相关方法详情见[Datetime模块](https://www.cnblogs.com/tkqasn/p/6001134.html/ "悬停显示")  
+
