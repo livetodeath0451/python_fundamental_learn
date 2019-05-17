@@ -3,6 +3,18 @@ Task 04
 1.函数关键字
 --------------
 
+python中一共含有32个关键字：
+'false', 'none', 'true', 'and', 'as', 'assert',   
+'break', 'class', 'continue', 'def', 'del', 'elif', 'else',   
+ 'except', 'finally', 'for', 'from', 'global', 'if', 'import',   
+ 'in', 'is', 'lambda', 'nonlocal', 'not', 'or', 'pass', 'raise',  
+ 'return', 'try', 'while', 'with', 'yield'
+
+　　--关键字-是Python内置的、具有特殊意义的表示符 
+　　--使用时关键字后面不需要括号 
+
+
+
 2.函数的定义
 --------------
 
@@ -18,10 +30,10 @@ Task 04
 
 ···
 
-def functionname( parameters ):
-   "函数_文档字符串"
-   function_suite
-   return [expression]
+def functionname( parameters ): 
+   #"函数_文档字符串"
+   function_suite 
+   return [expression]    
 ··· 
 
 
