@@ -23,8 +23,7 @@ Task 05
 替换那些匹配某个模式的文本。许多程序设计语言都支持利用正则表达式进行字符串操作。
 
 
-  相关方法详情见[正则表达式](https://baijiahao.baidu.com/s?id=1607549773736200730&wfr=spider&for=pc
-/ "悬停显示")  
+  相关方法详情见[正则表达式](https://baijiahao.baidu.com/s?id=1607549773736200730&wfr=spider&for=pc/ "悬停显示")  
 
 
 
